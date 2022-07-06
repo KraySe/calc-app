@@ -1,7 +1,12 @@
 import React from 'react';
+import './App.css';
 
 const App = () => {
-    return <h1>Hola mundo desde (App)</h1>
+    return (
+        <main className='react-calculator'>
+            Calc app
+        </main>
+    )
 }
 
 
