@@ -79,3 +79,10 @@ CSS Selectors: [https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors](htt
 HTML Elements: [https://developer.mozilla.org/es/docs/Web/HTML/Element](https://developer.mozilla.org/es/docs/Web/HTML/Element) 
 
 FAQ Styling with React: [https://es.reactjs.org/docs/faq-styling.html](https://es.reactjs.org/docs/faq-styling.html) 
+
+### SOLID 
+
+- (Single Responsability => única responsabilidad)
+
+
+
