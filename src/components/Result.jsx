@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const Result = (props) => {
+const Result = ({value}) => {
     // debugger
-    console.log('render Result', props);
+    console.log('render Result', value);
     return (
         <div className="result">
-            <span>{props.value}</span>
+            <span>{value}</span>
         </div>
     )
 }
