@@ -3,6 +3,7 @@ import Result from "./components/Result";
 import Button from "./components/Button";
 import './App.css';
 import MathOperations from './components/MathOperations';
+import Functions from './components/Functions';
 
 const App = () => {
 
@@ -21,11 +22,22 @@ const App = () => {
                     return (<Button key={i} text={numAdapted.toString()} clickHandler={clickHandlerFunction} />)
                 })}
             </div>
-            <div className="functions">
-                <button>clear</button>
-                <button>remove</button>
-            </div>
-            <MathOperations onClickOperation={clickHandlerFunction} onClickEqual={clickHandlerFunction} />
+            <Functions 
+                onContentClear={
+                    () => console.log('content clear')
+                } 
+                onDelete={
+                    () => console.log('delete')
+                } 
+            />
+            <MathOperations 
+                onClickOperation={
+                    operation => console.log('Operation: ', operation)
+                } 
+                onClickEqual={
+                    equal => console.log('Equal: ', equal)
+                } 
+            />
         </main>
     )
 }
