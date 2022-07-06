@@ -3,6 +3,7 @@ import Result from "./components/Result";
 import './App.css';
 
 const App = () => {
+    console.log('Render App');
     return (
         <main className='react-calculator'>
             <Result />
