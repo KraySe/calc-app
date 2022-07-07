@@ -1,9 +1,12 @@
 import React from 'react';
+
+import './App.css';
+
 import Result from "./components/Result";
 import Numbers from "./components/Numbers";
-import './App.css';
-import MathOperations from './components/MathOperations';
 import Functions from './components/Functions';
+import MathOperations from './components/MathOperations';
+
 
 const App = () => (
     <main className='react-calculator'>
