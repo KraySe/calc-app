@@ -84,5 +84,35 @@ FAQ Styling with React: [https://es.reactjs.org/docs/faq-styling.html](https://e
 
 - (Single Responsability => única responsabilidad)
 
+### useState
+
+- Retorna un estado y una función que permite modificarlo.
+
+Se suele utilizar array destructuring para sus valores de retorno.
+
+a) 
+```javascript 
+    const array = funcionQueRetornaUnArray();
+    const primerElemento = array[0];
+    const segundoElemento = array[1]
+```
+
+b)
+```javascript
+    const [ primerElemento, segundoElemento ] = funcionQueRetornaUnArray();
+
+```
+
+### Renderización en React
+
+Render > App > Result, Numbers, Functions, MathOperations.                       ""
+
+Evento > Button (onClick) > Functions (onClickNumber) > setStack(numero)
+
+Render > App(ok) > Result(ok), Numbers(x), Functions(x), MathOperations(x)       9
+
+Evento > Button (onClick) > Functions (onClickNumber) > setStack(numero)
+
+Render > App(ok) > Result(ok), Numbers(x), Functions(x), MathOperations(x)       92
 
 

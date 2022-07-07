@@ -8,28 +8,51 @@ import Functions from './components/Functions';
 import MathOperations from './components/MathOperations';
 
 
-const App = () => (
-    <main className='react-calculator'>
-        <Result value={"0"} />
-        <Numbers onClickNumber={number => console.log('number: ', number)} />
-        <Functions
-            onContentClear={
-                () => console.log('content clear')
+const App = () => {
+    // funcion que retorna un array
+    const [stack, setStack] = React.useState('');
+
+    return (
+        <main className='react-calculator'>
+            <Result value={stack} />
+            <Numbers onClickNumber={number => {
+                console.log('number: ', number)
+                setStack(`${stack}${number}`)
             }
-            onDelete={
-                () => console.log('delete')
-            }
-        />
-        <MathOperations
-            onClickOperation={
-                operation => console.log('Operation: ', operation)
-            }
-            onClickEqual={
-                equal => console.log('Equal: ', equal)
-            }
-        />
-    </main>
-)
+            } />
+            <Functions
+                onContentClear={
+                    () => {
+                        console.log('content clear')
+                        setStack('')
+                    }
+                }
+                onDelete={
+                    () => {
+                        const newStack = stack.substring(0, stack.length - 1)
+                        console.log('delete', newStack)
+                        setStack(newStack);
+                    }
+                }
+            />
+            <MathOperations
+                onClickOperation={
+                    operation => {
+                        console.log('Operation: ', operation)
+                        setStack(`${stack}${operation}`)
+                    }
+                }
+                onClickEqual={
+                    equal => {
+                        console.log('Equal: ', equal)
+                        setStack(`${stack}${equal}`)
+                    }
+                }
+            />
+        </main>
+    )
+}
+
 
 
 
