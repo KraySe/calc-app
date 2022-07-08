@@ -120,3 +120,8 @@ Render > App(ok) > Result(ok), Numbers(x), Functions(x), MathOperations(x)      
 
 Expresiones regulares: [https://regexr.com/](https://regexr.com/) 
 
+### issues
+
+- personalizar calculadora, colores, etc.
+- guardar el historial de operaciones.
+- añadir nuevas operaciones.
