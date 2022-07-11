@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "calc-app-training",
+    "react-calculator-training": "calc-app-training"
+  },
+  "targets": {}
+}

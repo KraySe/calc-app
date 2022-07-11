@@ -122,6 +122,10 @@ Expresiones regulares: [https://regexr.com/](https://regexr.com/)
 
 ### issues
 
+// TODO
+
 - personalizar calculadora, colores, etc.
 - guardar el historial de operaciones.
 - añadir nuevas operaciones.
+- añadir storybook
+- refactorizar README.
