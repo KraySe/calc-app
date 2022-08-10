@@ -129,3 +129,31 @@ Expresiones regulares: [https://regexr.com/](https://regexr.com/)
 - añadir nuevas operaciones.
 - añadir storybook
 - refactorizar README.
+
+
+## APUNTES
+
+### Tipo de elementos JSX que TS distingue
+
+Se distinguen dos tipos de elementos JSX: los intrínsecos y los creados por el desarrollador (value-based).
+
+Los elementos intrínsecos estan definidos en la definición de tipos de React, mediante:
+
+    ´interface IntrinsicElements´
+
+Este tipo de elementos no es necesario realizar el *import* para que esten disponibles.
+Algunos ejemplos son : 
+    - div
+    - span
+    - a
+    - input
+    - main 
+    - etc 
+
+Además de los elementos definidos en forma "intrínseca" hay algunos atributos que se definen de esta misma manera, por ejemplo:
+
+    - key
+    - className
+
+Cuando veamos un error que diga algo de "intrisec elements" o props, en realidad probablemente quiera decir que el elemento no existe dentro de los importados ni en los intrínsecos, o que la propiedad no existe ni en las declaradas ni en las intrínsecas.
+
