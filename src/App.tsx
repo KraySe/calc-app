@@ -10,7 +10,7 @@ import Functions from './components/Functions';
 import MathOperations from './components/MathOperations';
 
 
-const App = () => {
+const App: React.FC = () => {
     const [stack, setStack] = React.useState('');
     const items = words(stack, /[^-^+^*^/]+/g);
     const value = items.length > 0 ? items[items.length - 1] : '0';
